@@ -158,12 +158,12 @@
             //   * deltaMode 2 is by pages
             if ( orgEvent.deltaMode === 1 ) {
                 var lineHeight = $.data(this, 'mousewheel-line-height');
-                delta  *= lineHeight;
+                //delta  *= lineHeight;
                 deltaY *= lineHeight;
                 deltaX *= lineHeight;
             } else if ( orgEvent.deltaMode === 2 ) {
                 var pageHeight = $.data(this, 'mousewheel-page-height');
-                delta  *= pageHeight;
+                //delta  *= pageHeight;
                 deltaY *= pageHeight;
                 deltaX *= pageHeight;
             }
@@ -183,7 +183,7 @@
             // Adjust older deltas if necessary
             if ( shouldAdjustOldDeltas(orgEvent, absDelta) ) {
                 // Divide all the things by 40!
-                delta  /= 40;
+                //delta  /= 40;
                 deltaX /= 40;
                 deltaY /= 40;
             }
